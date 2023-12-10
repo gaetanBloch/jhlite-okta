@@ -45,6 +45,7 @@
     <spring-cloud.version>2023.0.0</spring-cloud.version>
     <git-commit-id-plugin.version>7.0.0</git-commit-id-plugin.version>
     <cucumber.version>7.14.1</cucumber.version>
+    <springdoc-openapi-starter-webmvc.version>2.3.0</springdoc-openapi-starter-webmvc.version>
   </properties>
 
   <dependencyManagement>
@@ -261,6 +262,18 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>${springdoc-openapi-starter-webmvc.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+      <version>${springdoc-openapi-starter-webmvc.version}</version>
     </dependency>
 
     <dependency>

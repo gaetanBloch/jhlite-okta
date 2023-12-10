@@ -149,3 +149,9 @@ management:
       enabled: true
 server:
   port: 8080
+springdoc:
+  swagger-ui:
+    operationsSorter: alpha
+    tagsSorter: alpha
+    tryItOutEnabled: true
+  enable-native-support: true

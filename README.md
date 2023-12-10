@@ -84,5 +84,6 @@ docker compose -f src/main/docker/cassandra-migration.yml up -d
 - [Cassandra Migration](documentation/cassandra-migration.md)
 - [Application errors](documentation/application-errors.md)
 - [Jpa pages](documentation/jpa-pages.md)
+- [Logs Spy](documentation/logs-spy.md)
 
 <!-- jhipster-needle-documentation -->

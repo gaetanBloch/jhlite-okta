@@ -69,6 +69,17 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+  security:
+    oauth2:
+      client:
+        registration:
+          oidc:
+            client-secret: web_app
+            client-id: web_app
+            scope: openid,profile,email
+        provider:
+          oidc:
+            issuer-uri: http://localhost:9080/realms/jhipster
 logging:
   level:
     com:
@@ -87,6 +98,9 @@ application:
     ehcache:
       time-to-live-seconds: 3600
       max-entries: 100
+  security:
+    oauth2:
+      audience: account,api://default
 kafka:
   producer:
     '[key.serializer]': org.apache.kafka.common.serialization.StringSerializer

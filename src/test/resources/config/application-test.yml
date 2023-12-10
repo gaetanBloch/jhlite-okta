@@ -7,6 +7,7 @@ logging:
 spring:
   main:
     banner-mode: 'off'
+    allow-bean-definition-overriding: true
   data:
     mongodb:
       uri: ${TEST_MONGODB_URI}
@@ -24,6 +25,12 @@ spring:
     port: ${TEST_CASSANDRA_PORT}
     contact-points: ${TEST_CASSANDRA_CONTACT_POINT}
     keyspace-name: ${TEST_CASSANDRA_KEYSPACE}
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: http://DO_NOT_CALL:9080/realms/jhipster
 kafka:
   bootstrap-servers: localhost:9092
 pulsar:

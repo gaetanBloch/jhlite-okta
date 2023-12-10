@@ -78,6 +78,10 @@ application:
         ring-buffer-size: 8192
         host: localhost
         port: 5000
+  cache:
+    ehcache:
+      time-to-live-seconds: 3600
+      max-entries: 100
 kafka:
   producer:
     '[key.serializer]': org.apache.kafka.common.serialization.StringSerializer

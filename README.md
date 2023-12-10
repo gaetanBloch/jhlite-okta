@@ -102,5 +102,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Mongock](documentation/mongock.md)
 - [CORS configuration](documentation/cors-configuration.md)
 - [Cucumber](documentation/cucumber.md)
+- [Kipe authorization](documentation/kipe-authorization.md)
 
 <!-- jhipster-needle-documentation -->

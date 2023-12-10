@@ -76,5 +76,6 @@ docker compose -f src/main/docker/cassandra.yml up -d
 - [Dev tools](documentation/dev-tools.md)
 - [Apache Kafka](documentation/apache-kafka.md)
 - [Cassandra](documentation/cassandra.md)
+- [Caffeine](documentation/caffeine.md)
 
 <!-- jhipster-needle-documentation -->

@@ -43,6 +43,17 @@ spring:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
         physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
     open-in-view: false
+  task:
+    scheduling:
+      thread-name-prefix: jhipsterSampleApplication-scheduling-
+      pool:
+        size: 2
+    execution:
+      pool:
+        keep-alive: 10s
+        queue-capacity: 100
+        max-size: 16
+      thread-name-prefix: jhipsterSampleApplication-task-
 logging:
   level:
     com:

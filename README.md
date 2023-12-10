@@ -65,6 +65,10 @@ docker compose -f src/main/docker/cassandra.yml up -d
 docker compose -f src/main/docker/cassandra-migration.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/akhq.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 

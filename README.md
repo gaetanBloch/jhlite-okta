@@ -96,5 +96,6 @@ docker compose -f src/main/docker/consul.yml up -d
 - [Logs Spy](documentation/logs-spy.md)
 - [Mongock](documentation/mongock.md)
 - [CORS configuration](documentation/cors-configuration.md)
+- [Cucumber](documentation/cucumber.md)
 
 <!-- jhipster-needle-documentation -->

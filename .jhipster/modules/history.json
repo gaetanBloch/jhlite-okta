@@ -611,5 +611,19 @@
       "indentSize" : 2,
       "configurationFormat" : "yaml"
     }
+  }, {
+    "module" : "spring-boot-cucumber-mvc",
+    "date" : "2023-12-10T06:45:27.902463Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "configurationFormat" : "yaml",
+      "oktaDomain" : "dev-123456.okta.com",
+      "oktaClientId" : "0oab8eb55Kb9jdMIr5d6"
+    }
   } ]
 }

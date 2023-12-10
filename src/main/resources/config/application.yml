@@ -8,6 +8,38 @@ spring:
     mongodb:
       database: jhipsterSampleApplication
       uri: mongodb://localhost:27017/jhipsterSampleApplication
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  datasource:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+    password: ''
+    driver-class-name: org.postgresql.Driver
+    username: jhipsterSampleApplication
+    url: jdbc:postgresql://localhost:5432/jhipsterSampleApplication
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+          batch_size: 25
+        query:
+          fail_on_pagination_over_collection_fetch: true
+          in_clause_parameter_padding: true
+        generate_statistics: false
+        order_updates: true
+        connection:
+          provider_disables_autocommit: true
+        order_inserts: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    open-in-view: false
 logging:
   level:
     com:

@@ -41,6 +41,10 @@ docker compose -f src/main/docker/sonar.yml up -d
 docker compose -f src/main/docker/mongodb.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/postgresql.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -51,5 +55,6 @@ docker compose -f src/main/docker/mongodb.yml up -d
 - [Assertions](documentation/assertions.md)
 - [sonar](documentation/sonar.md)
 - [Mongo DB](documentation/mongo-db.md)
+- [Postgresql](documentation/postgresql.md)
 
 <!-- jhipster-needle-documentation -->

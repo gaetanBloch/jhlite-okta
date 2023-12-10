@@ -10,3 +10,10 @@ spring:
   data:
     mongodb:
       uri: ${TEST_MONGODB_URI}
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: jhipsterSampleApplication
+    hikari:
+      maximum-pool-size: 2
+    url: jdbc:tc:postgresql:16.1:///jhipsterSampleApplication?TC_TMPFS=/testtmpfs:rw
+    password: ''

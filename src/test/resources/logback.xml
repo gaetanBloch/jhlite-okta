@@ -16,6 +16,10 @@
   <logger name="org.mongodb.driver" level="WARN" />
   <logger name="com.github.dockerjava" level="WARN" />
   <logger name="org.testcontainers" level="WARN" />
+  <logger name="org.hibernate.validator" level="WARN" />
+  <logger name="org.hibernate.orm" level="WARN" />
+  <logger name="org.hibernate.ejb.HibernatePersistence" level="OFF" />
+  <logger name="org.postgresql" level="WARN" />
   <!-- jhipster-needle-logback-add-log -->
 
   <root level="${log.level}">

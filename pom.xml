@@ -42,6 +42,7 @@
     <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
     <archunit-junit5.version>1.2.1</archunit-junit5.version>
     <mongock.version>5.2.2</mongock.version>
+    <spring-cloud.version>2023.0.0</spring-cloud.version>
   </properties>
 
   <dependencyManagement>
@@ -58,6 +59,14 @@
         <groupId>io.mongock</groupId>
         <artifactId>mongock-bom</artifactId>
         <version>${mongock.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -189,6 +198,21 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bootstrap</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-consul-config</artifactId>
     </dependency>
 
     <dependency>

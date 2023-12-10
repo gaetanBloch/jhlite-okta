@@ -24,6 +24,7 @@
   <logger name="com.datastax" level="WARN" />
   <logger name="org.ehcache" level="WARN" />
   <logger name="com.tngtech.archunit" level="WARN" />
+  <logger name="org.apache" level="ERROR" />
   <!-- jhipster-needle-logback-add-log -->
 
   <root level="${log.level}">

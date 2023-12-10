@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    consul:
+      port: 8500
+      discovery:
+        health-check-path: ${server.servlet.context-path:}/management/health
+        tags[3]: git-version=${git.commit.id.describe:}
+        prefer-ip-address: true
+        tags[2]: profile=${spring.profiles.active:}
+        tags[5]: git-branch=${git.branch:}
+        tags[4]: git-commit=${git.commit.id.abbrev:}
+        tags[1]: context-path=${server.servlet.context-path:}
+        tags[0]: version=@project.version@
+        service-name: jhipsterSampleApplication
+        instance-id: jhipsterSampleApplication:${spring.application.instance-id:${random.value}}
+      config:
+        profile-separator: '-'
+        watch:
+          enabled: false
+        format: yaml
+      host: localhost
+    compatibility-verifier:
+      enabled: false
+  application:
+    name: jhipsterSampleApplication

@@ -1,0 +1,13 @@
+# Common configuration shared between all applications
+# This file is in format yaml as it is loaded by https://github.com/jhipster/consul-config-loader
+configserver:
+  name: Docker Consul Service
+  status: Connected to Consul Server running in Docker
+
+# Used for Security with JWT (spring-boot-jwt module)
+# application:
+#   security:
+#     authentication:
+#       jwt:
+#         # secret key which should be base64 encoded and changed in production
+#         base64-secret: NzI1NGNhMDM4ZmNlMjkwZGE4MWRiN2FmNjMzZGFjZDE4MzFkNmFmNzk3YzU3YmNiYjM2ZmUxMjM5MTI2Njk0OQ==

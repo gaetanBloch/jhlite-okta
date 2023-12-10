@@ -43,3 +43,10 @@ pulsar:
     topic-name: test-topic
 server:
   port: 0
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: web_app
+      realm: jhipster
+  oauth2:
+    authorization-url: http://localhost:9080/realms/jhipster/protocol/openid-connect/auth

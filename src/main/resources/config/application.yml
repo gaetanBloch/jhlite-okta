@@ -154,4 +154,9 @@ springdoc:
     operationsSorter: alpha
     tagsSorter: alpha
     tryItOutEnabled: true
+    oauth:
+      client-id: web_app
+      realm: jhipster
   enable-native-support: true
+  oauth2:
+    authorization-url: http://localhost:9080/realms/jhipster/protocol/openid-connect/auth

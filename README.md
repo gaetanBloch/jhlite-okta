@@ -61,5 +61,6 @@ docker compose -f src/main/docker/redis.yml up -d
 - [Mongo DB](documentation/mongo-db.md)
 - [Postgresql](documentation/postgresql.md)
 - [Redis](documentation/redis.md)
+- [Dev tools](documentation/dev-tools.md)
 
 <!-- jhipster-needle-documentation -->

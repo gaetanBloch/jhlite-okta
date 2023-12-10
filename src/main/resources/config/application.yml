@@ -11,6 +11,9 @@ spring:
     jpa:
       repositories:
         bootstrap-mode: deferred
+    redis:
+      url: redis://localhost:6379
+      database: 0
   datasource:
     hikari:
       poolName: Hikari

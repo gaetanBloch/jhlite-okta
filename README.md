@@ -45,6 +45,10 @@ docker compose -f src/main/docker/mongodb.yml up -d
 docker compose -f src/main/docker/postgresql.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/redis.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -56,5 +60,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [sonar](documentation/sonar.md)
 - [Mongo DB](documentation/mongo-db.md)
 - [Postgresql](documentation/postgresql.md)
+- [Redis](documentation/redis.md)
 
 <!-- jhipster-needle-documentation -->

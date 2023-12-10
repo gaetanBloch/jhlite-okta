@@ -10,6 +10,8 @@ spring:
   data:
     mongodb:
       uri: ${TEST_MONGODB_URI}
+    redis:
+      url: ${TEST_REDIS_URL}
   datasource:
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
     username: jhipsterSampleApplication

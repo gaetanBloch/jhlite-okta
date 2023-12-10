@@ -1,1 +1,1 @@
-org.springframework.context.ApplicationListener=com.mycompany.myapp.TestMongoDBManager,com.mycompany.myapp.TestRedisManager,com.mycompany.myapp.TestCassandraManager
+org.springframework.context.ApplicationListener=com.mycompany.myapp.TestMongoDBManager,com.mycompany.myapp.TestRedisManager,com.mycompany.myapp.TestCassandraManager,com.mycompany.myapp.TestCassandraMigrationLoader

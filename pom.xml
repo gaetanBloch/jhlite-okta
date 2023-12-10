@@ -34,6 +34,7 @@
     <testcontainers.version>1.17.6</testcontainers.version>
     <kafka-clients.version>3.6.1</kafka-clients.version>
     <pulsar.version>2.10.0</pulsar.version>
+    <cassandraunit.version>4.3.1.0</cassandraunit.version>
   </properties>
 
   <dependencyManagement>
@@ -187,6 +188,13 @@
       <groupId>org.testcontainers</groupId>
       <artifactId>cassandra</artifactId>
       <version>${testcontainers.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.cassandraunit</groupId>
+      <artifactId>cassandra-unit</artifactId>
+      <version>${cassandraunit.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

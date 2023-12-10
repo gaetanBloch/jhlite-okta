@@ -61,6 +61,10 @@ docker compose -f src/main/docker/pulsar.yml up -d
 docker compose -f src/main/docker/cassandra.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/cassandra-migration.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -77,5 +81,6 @@ docker compose -f src/main/docker/cassandra.yml up -d
 - [Apache Kafka](documentation/apache-kafka.md)
 - [Cassandra](documentation/cassandra.md)
 - [Caffeine](documentation/caffeine.md)
+- [Cassandra Migration](documentation/cassandra-migration.md)
 
 <!-- jhipster-needle-documentation -->

@@ -34,3 +34,5 @@ pulsar:
     topic-names[0]: test-topic
   producer:
     topic-name: test-topic
+server:
+  port: 0

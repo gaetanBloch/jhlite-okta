@@ -39,6 +39,7 @@
   <logger name="com.datastax" level="WARN" />
   <logger name="org.ehcache" level="WARN" />
   <logger name="org.apache" level="ERROR" />
+  <logger name="io.undertow" level="WARN" />
   <!-- jhipster-needle-logback-add-log -->
 
   <root level="${log.level}">

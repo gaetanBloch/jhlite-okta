@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { routes } from './app.route';
+import AdminRoutingModule, { routes } from './admin-routing.module';
 
-describe('AppRoutes', () => {
+describe('AdminRoutingModule', () => {
   let router: Router;
 
   beforeEach(() => {
@@ -15,11 +15,11 @@ describe('AppRoutes', () => {
   });
 
   it('should be defined', () => {
-    expect(routes).toBeDefined();
+    expect(AdminRoutingModule).toBeDefined();
   });
 
-  it('should navigate on admin endpoint', () => {
-    router.navigateByUrl('/admin');
+  it('should navigate on health endpoint', () => {
+    router.navigateByUrl('/health');
   });
   // jhipster-needle-angular-menu
 });

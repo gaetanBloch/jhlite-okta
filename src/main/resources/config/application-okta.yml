@@ -8,3 +8,14 @@ spring:
         registration:
           oidc:
             client-id: 0oab8eb55Kb9jdMIr5d6
+springdoc:
+  swagger-ui:
+    oauth:
+      scopes:
+      - openid
+      - profile
+      - email
+      client-id: 0oab8eb55Kb9jdMIr5d6
+      realm: jhipster
+  oauth2:
+    authorization-url: https://dev-123456.okta.com/oauth2/default/v1/authorize?nonce="jhipster"

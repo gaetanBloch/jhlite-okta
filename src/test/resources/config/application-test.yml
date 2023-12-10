@@ -7,3 +7,6 @@ logging:
 spring:
   main:
     banner-mode: 'off'
+  data:
+    mongodb:
+      uri: ${TEST_MONGODB_URI}

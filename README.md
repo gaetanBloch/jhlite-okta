@@ -37,6 +37,10 @@ docker compose -f src/main/docker/sonar.yml up -d
 ./mvnw clean verify sonar:sonar
 ```
 
+```bash
+docker compose -f src/main/docker/mongodb.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -46,5 +50,6 @@ docker compose -f src/main/docker/sonar.yml up -d
 - [Package types](documentation/package-types.md)
 - [Assertions](documentation/assertions.md)
 - [sonar](documentation/sonar.md)
+- [Mongo DB](documentation/mongo-db.md)
 
 <!-- jhipster-needle-documentation -->

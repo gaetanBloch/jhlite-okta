@@ -4,6 +4,10 @@ spring:
   threads:
     virtual:
       enabled: true
+  data:
+    mongodb:
+      database: jhipsterSampleApplication
+      uri: mongodb://localhost:27017/jhipsterSampleApplication
 logging:
   level:
     com:

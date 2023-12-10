@@ -723,5 +723,19 @@
       "oktaDomain" : "dev-123456.okta.com",
       "oktaClientId" : "0oab8eb55Kb9jdMIr5d6"
     }
+  }, {
+    "module" : "spring-boot-oauth2-account",
+    "date" : "2023-12-10T06:45:28.691538Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "configurationFormat" : "yaml",
+      "oktaDomain" : "dev-123456.okta.com",
+      "oktaClientId" : "0oab8eb55Kb9jdMIr5d6"
+    }
   } ]
 }

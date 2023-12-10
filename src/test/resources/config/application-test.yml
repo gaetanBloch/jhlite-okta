@@ -19,3 +19,5 @@ spring:
       maximum-pool-size: 2
     url: jdbc:tc:postgresql:16.1:///jhipsterSampleApplication?TC_TMPFS=/testtmpfs:rw
     password: ''
+kafka:
+  bootstrap-servers: localhost:9092

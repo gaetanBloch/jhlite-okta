@@ -73,3 +73,16 @@ application:
         ring-buffer-size: 8192
         host: localhost
         port: 5000
+kafka:
+  producer:
+    '[key.serializer]': org.apache.kafka.common.serialization.StringSerializer
+    '[value.serializer]': org.apache.kafka.common.serialization.StringSerializer
+  bootstrap-servers: localhost:9092
+  consumer:
+    '[value.deserializer]': org.apache.kafka.common.serialization.StringDeserializer
+    '[auto':
+      offset.reset]: earliest
+    '[key.deserializer]': org.apache.kafka.common.serialization.StringDeserializer
+    '[group.id]': myapp
+  polling:
+    timeout: 10000

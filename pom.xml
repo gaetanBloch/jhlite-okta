@@ -33,7 +33,7 @@
     <reflections.version>0.10.2</reflections.version>
     <testcontainers.version>1.17.6</testcontainers.version>
     <kafka-clients.version>3.6.1</kafka-clients.version>
-    <pulsar.version>2.10.0</pulsar.version>
+    <pulsar.version>2.10.1</pulsar.version>
     <cassandraunit.version>4.3.1.0</cassandraunit.version>
     <node.version>v20.10.0</node.version>
     <npm.version>10.2.5</npm.version>

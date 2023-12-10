@@ -27,9 +27,16 @@
     <jib-maven-plugin.version>3.4.0</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.10.0.2594</sonar-maven-plugin.version>
     <properties-maven-plugin.version>1.2.1</properties-maven-plugin.version>
+    <commons-lang3.version>3.14.0</commons-lang3.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>

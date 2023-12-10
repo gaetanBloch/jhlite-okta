@@ -37,6 +37,8 @@ spring:
         connection:
           provider_disables_autocommit: true
         order_inserts: true
+        cache:
+          use_second_level_cache: true
     hibernate:
       ddl-auto: none
       naming:

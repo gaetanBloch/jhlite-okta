@@ -57,6 +57,10 @@ docker compose -f src/main/docker/kafka.yml up -d
 docker compose -f src/main/docker/pulsar.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/cassandra.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -71,5 +75,6 @@ docker compose -f src/main/docker/pulsar.yml up -d
 - [Redis](documentation/redis.md)
 - [Dev tools](documentation/dev-tools.md)
 - [Apache Kafka](documentation/apache-kafka.md)
+- [Cassandra](documentation/cassandra.md)
 
 <!-- jhipster-needle-documentation -->

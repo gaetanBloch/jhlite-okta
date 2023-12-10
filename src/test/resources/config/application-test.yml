@@ -19,6 +19,11 @@ spring:
       maximum-pool-size: 2
     url: jdbc:tc:postgresql:16.1:///jhipsterSampleApplication?TC_TMPFS=/testtmpfs:rw
     password: ''
+  cassandra:
+    local-datacenter: ${TEST_CASSANDRA_DC}
+    port: ${TEST_CASSANDRA_PORT}
+    contact-points: ${TEST_CASSANDRA_CONTACT_POINT}
+    keyspace-name: ${TEST_CASSANDRA_KEYSPACE}
 kafka:
   bootstrap-servers: localhost:9092
 pulsar:

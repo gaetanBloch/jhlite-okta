@@ -59,6 +59,11 @@ spring:
       enabled: false
     livereload:
       enabled: false
+  cassandra:
+    schema-action: none
+    local-datacenter: datacenter1
+    contact-points: 127.0.0.1
+    port: 9042
 logging:
   level:
     com:
@@ -89,3 +94,6 @@ kafka:
 pulsar:
   client:
     service-url: pulsar://localhost:6650
+'#spring':
+  cassandra:
+    keyspace-name: yourKeyspace

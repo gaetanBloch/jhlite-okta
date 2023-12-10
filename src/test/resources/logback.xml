@@ -21,6 +21,7 @@
   <logger name="org.hibernate.ejb.HibernatePersistence" level="OFF" />
   <logger name="org.postgresql" level="WARN" />
   <logger name="redis.clients.jedis" level="WARN" />
+  <logger name="com.datastax" level="WARN" />
   <!-- jhipster-needle-logback-add-log -->
 
   <root level="${log.level}">

@@ -86,3 +86,6 @@ kafka:
     '[group.id]': myapp
   polling:
     timeout: 10000
+pulsar:
+  client:
+    service-url: pulsar://localhost:6650

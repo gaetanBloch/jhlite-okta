@@ -33,6 +33,7 @@
     <reflections.version>0.10.2</reflections.version>
     <testcontainers.version>1.17.6</testcontainers.version>
     <kafka-clients.version>3.6.1</kafka-clients.version>
+    <pulsar.version>2.10.0</pulsar.version>
   </properties>
 
   <dependencyManagement>
@@ -133,6 +134,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.apache.pulsar</groupId>
+      <artifactId>pulsar-client</artifactId>
+      <version>${pulsar.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -155,6 +162,13 @@
     <dependency>
       <groupId>org.testcontainers</groupId>
       <artifactId>testcontainers</artifactId>
+      <version>${testcontainers.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>pulsar</artifactId>
       <version>${testcontainers.version}</version>
       <scope>test</scope>
     </dependency>

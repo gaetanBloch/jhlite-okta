@@ -53,6 +53,10 @@ docker compose -f src/main/docker/redis.yml up -d
 docker compose -f src/main/docker/kafka.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/pulsar.yml up -d
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 

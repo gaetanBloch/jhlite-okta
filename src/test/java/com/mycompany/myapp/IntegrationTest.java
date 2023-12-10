@@ -16,6 +16,7 @@ import org.springframework.test.context.ActiveProfiles;
 @DisplayNameGeneration(ReplaceCamelCase.class)
 @SpringBootTest(classes = { JhipsterSampleApplicationApp.class })
 @ExtendWith(KafkaTestContainerExtension.class)
+@ExtendWith(PulsarTestContainerExtension.class)
 public @interface IntegrationTest {
   @AliasFor(annotation = SpringBootTest.class)
   String[] properties() default {};

@@ -21,3 +21,11 @@ spring:
     password: ''
 kafka:
   bootstrap-servers: localhost:9092
+pulsar:
+  client:
+    num-io-threads: 8
+  consumer:
+    subscription-name: test-subscription
+    topic-names[0]: test-topic
+  producer:
+    topic-name: test-topic

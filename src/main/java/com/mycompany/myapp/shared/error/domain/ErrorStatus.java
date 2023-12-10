@@ -1,0 +1,16 @@
+package com.mycompany.myapp.shared.error.domain;
+
+public enum ErrorStatus {
+  BAD_REQUEST,
+  UNAUTHORIZED,
+  PAYMENT_REQUIRED,
+  FORBIDDEN,
+  NOT_FOUND,
+  METHOD_NOT_ALLOWED,
+  NOT_ACCEPTABLE,
+  CONFLICT,
+  GONE,
+  I_AM_A_TEAPOT,
+  INTERNAL_SERVER_ERROR,
+  NOT_IMPLEMENTED
+}

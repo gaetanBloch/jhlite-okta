@@ -82,5 +82,6 @@ docker compose -f src/main/docker/cassandra-migration.yml up -d
 - [Cassandra](documentation/cassandra.md)
 - [Caffeine](documentation/caffeine.md)
 - [Cassandra Migration](documentation/cassandra-migration.md)
+- [Application errors](documentation/application-errors.md)
 
 <!-- jhipster-needle-documentation -->

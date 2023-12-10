@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: JhipsterSampleApplication
+  threads:
+    virtual:
+      enabled: true
+logging:
+  level:
+    com:
+      mycompany:
+        myapp: INFO

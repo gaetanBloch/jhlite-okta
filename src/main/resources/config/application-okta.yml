@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            issuer-uri: https://dev-123456.okta.com/oauth2/default
+        registration:
+          oidc:
+            client-id: 0oab8eb55Kb9jdMIr5d6

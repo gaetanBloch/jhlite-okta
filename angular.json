@@ -27,7 +27,7 @@
             ],
             "styles": ["src/main/webapp/styles.css"],
             "scripts": [],
-            "allowedCommonJsDependencies": []
+            "allowedCommonJsDependencies": ["base64-js", "js-sha256", "keycloak-js"]
           },
           "configurations": {
             "production": {

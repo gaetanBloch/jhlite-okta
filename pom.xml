@@ -29,6 +29,7 @@
     <properties-maven-plugin.version>1.2.1</properties-maven-plugin.version>
     <commons-lang3.version>3.14.0</commons-lang3.version>
     <spring-boot.version>3.2.0</spring-boot.version>
+    <logstash-logback-encoder.version>7.4</logstash-logback-encoder.version>
   </properties>
 
   <dependencyManagement>
@@ -59,6 +60,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-configuration-processor</artifactId>
       <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>net.logstash.logback</groupId>
+      <artifactId>logstash-logback-encoder</artifactId>
+      <version>${logstash-logback-encoder.version}</version>
     </dependency>
 
     <dependency>

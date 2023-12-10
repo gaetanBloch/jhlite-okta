@@ -101,3 +101,5 @@ pulsar:
 '#spring':
   cassandra:
     keyspace-name: yourKeyspace
+mongock:
+  migration-scan-package: com.mycompany.myapp

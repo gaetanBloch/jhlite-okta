@@ -64,6 +64,9 @@ spring:
     local-datacenter: datacenter1
     contact-points: 127.0.0.1
     port: 9042
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
 logging:
   level:
     com:

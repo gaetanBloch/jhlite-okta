@@ -40,6 +40,7 @@
     <checksum-maven-plugin.version>1.11</checksum-maven-plugin.version>
     <maven-antrun-plugin.version>3.1.0</maven-antrun-plugin.version>
     <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
+    <archunit-junit5.version>1.2.1</archunit-junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -211,6 +212,13 @@
       <groupId>org.cassandraunit</groupId>
       <artifactId>cassandra-unit</artifactId>
       <version>${cassandraunit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tngtech.archunit</groupId>
+      <artifactId>archunit-junit5-api</artifactId>
+      <version>${archunit-junit5.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

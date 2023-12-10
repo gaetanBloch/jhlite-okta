@@ -15,6 +15,10 @@
     "node_modules"
   ],
   "scripts": {
+    "e2e": "npm run test:component",
+    "e2e:headless": "npm run test:component:headless",
+    "test:component": "cypress open --config-file src/test/javascript/integration/cypress-config.ts",
+    "test:component:headless": "cypress run --headless --config-file src/test/javascript/integration/cypress-config.ts",
     "jest": "jest src/test/javascript/spec --logHeapUsage --maxWorkers=2 --no-cache",
     "test": "npm run jest --",
     "test:watch": "jest --watch",
@@ -31,6 +35,8 @@
     "prettier:format": "prettier --write '{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}'"
   },
   "devDependencies": {
+    "cypress": "13.6.1",
+    "eslint-plugin-cypress": "2.15.1",
     "jest": "29.7.0",
     "@types/jest": "29.5.11",
     "ts-jest": "29.1.1",

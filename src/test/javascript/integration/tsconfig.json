@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es6",
+    "lib": ["es5", "es6", "dom", "dom.iterable"],
+    "types": ["cypress"]
+  },
+  "include": ["**/*.spec.ts"]
+}
